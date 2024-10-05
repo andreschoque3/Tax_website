@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="jobs.css">
+    <script src="https://kit.fontawesome.com/2955f893d9.js" crossorigin="anonymous"></script>
+    <title>Tax Consultants of North America</title>
 </head>
 <body>
+    <div class="header">
+        <div class="container">
+            <h1>Tax Consultants of North America</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Services/services.html">Services</a></li>
+                <li><a href="/Truckers/truckers.html">Truckers</a></li>
+                <li><a href="/Resources/resources.html">Resources</a></li>
+                <li><a href="/Jobs/jobs.html">Jobs</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+    <div class="jobs">
+        <div class="container">
+        <h3>COME GROW WITH US!!</h3>
+        <p>
+
+            We are growing!  We are a full-service accounting firm looking for the right people to join our team and be an integral part of our future success.<br> 
+            <br>
+            We value our relationships with our clients above everything and desire someone who will form relationships with our clients as well. 
+             We are laid back, practical and work very hard to ensure our clients are taken care of.  Our entire firm is centered around providing 
+             a full-service and personal experience for all clients.  We are excited to find the right person that will be able to help our firm 
+             continue to grow and take on new business.  We are looking for a long-term relationship.  Our firm is a great fit for someone who 
+             wants to grow in their accounting career and wants to know they are helping individuals and small businesses succeed.<br><br>
+            
+            All our positions offer competitive pay with plenty of room for growth and advancement.<br><br> 
+            
+            All employees are eligible to participate in our matching 401K after 6 months of employment.<br><br> 
+            
+            Other Benefits offered include Paid Time Off, Incentive Pay, Bonuses, Flexible Schedule, Paid Continuing Education and Paid Holidays.<br><br> 
+            
+            All positions are in person office positions.  After a year of employment, part time remote work might be possible.<br><br> 
+            
+            We are a dog-friendly office.  There is often a dog in the office.<br><br> 
+            
+            All candidates will undergo a thorough background, credit and drug screening.  
+            All candidates must be compliant with their federal and state tax obligations.  All information on resume will be verified.</p>
+
+            <h4>Top Current Hiring Positions:</h4>
+            <ul>
+                <li><a>Bookkeeper</a></li>
+                <li><a>Tax Prepper</a></li>
+                <li><a>TAX Assistant</a></li>
+                <li><a>Senior Accountant/Manager</a></li>
+            </ul>
+    </div>
+</div>
+
+    <div class="wrapper">
+        <div class="form-container">
+            <h2>Submit Your Application, Resume, and Cover Letter</h2>
+            <form id="submissionForm" onsubmit="return validateForm()">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
     
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="job">Select a Desired Job:</label>
+                <select id="job" name="job" required>
+                    <option value="" disabled selected>Select a job</option>
+                    <option value="taxPreparer">Tax Preparer</option>
+                    <option value="taxConsultant">Tax Consultant</option>
+                    <option value="taxAuditor">Tax Auditor</option>
+                    <option value="irsAgent">IRS Agent</option>
+                    <option value="taxLawyer">Tax Lawyer</option>
+                    <option value="accountant">Accountant</option>
+                    <option value="taxAdvisor">Tax Advisor</option>
+                    <option value="financialPlanner">Financial Planner</option>
+                </select>
+    
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+    
+                <label for="coverLetter">Upload Cover Letter:</label>
+                <input type="file" id="coverLetter" name="coverLetter" accept=".pdf, .doc, .docx">
+    
+                <button type="submit">Submit</button>
+            </form>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2024 Tax Consultants of North America and/or its licensors – <a>Accessibility / Privacy Policy</a> – <a>Terms of Use</a> – <a>Manage Website</a><br>
+            Accountant Website Design by <a>GetNetSet.com</a></p>
+    </div>
+    <script>
+        function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var job = document.getElementById("job").value;
+    var resume = document.getElementById("resume").value;
+    var coverLetter = document.getElementById("coverLetter").value;
+    var errorMessage = document.getElementById("error-message");
+
+    if (name === "" || email === "" || job === "") {
+        errorMessage.textContent = "All fields are required!";
+        return false;
+    }
+
+    if (resume === "") {
+        errorMessage.textContent = "Please upload your resume.";
+        return false;
+    }
+
+    errorMessage.textContent = ""; 
+    alert("Submission successful!");
+    return true;
+}
+
+    </script>
 </body>
 </html>
+
+

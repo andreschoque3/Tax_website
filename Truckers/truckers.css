@@ -8,3 +8,95 @@
 html {
     scroll-behavior: smooth;
 }
+
+body{
+     background: url(../Images/bg.jpg);
+}
+
+.container{
+    padding: 10px 10%;
+    flex: 1;
+}
+
+/* ------------nav-bar-------------- */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul LI a:hover::after {
+    width: 100%;
+}
+
+.header{
+    background: gray;
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.trucks{
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.trucks p{
+    font-weight: 500;
+    font-size: 18px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+}
+
+.trucks img {
+   height: 90%;
+   width: 90%; 
+   margin: auto;
+   border-radius: 20px;
+}
+
+.footer{
+    background: rgb(58, 83, 42);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.footer a{
+    color: white;
+    cursor: pointer;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

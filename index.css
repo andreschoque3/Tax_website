@@ -8,3 +8,161 @@
 html {
     scroll-behavior: smooth;
 }
+
+body{
+     background: url(./Images/bg.jpg);
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+/* ------------nav-bar-------------- */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul LI a:hover::after {
+    width: 100%;
+}
+
+.header{
+    background: gray;
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* --------middle section---------- */
+
+.option-selection {
+    display: flex;
+    justify-content:  center;
+    gap: 30px;
+    /* align-items: flex-start; */
+    height: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: 	#ccaa66;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle i {
+    font-size: 40px; 
+    color: white; 
+}
+
+
+.circle:hover {
+    transform: scale(1.1); 
+    background-color: #2a9152;
+}
+
+.circle-container p {
+    margin-top: 10px; 
+    font-size: 16px;
+    color: #333;
+    min-height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.title{
+    text-align: center;
+    padding-top: 20px;
+}
+.sub-title{
+    text-align: center;
+}
+
+
+
+.middle h1{
+    padding-top: 20px ;
+    text-align: center;
+}
+
+.intro p{
+    font-size: 20px;
+}
+.slider{
+    /* justify-content: center; */
+    /* margin: auto; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.slider img{
+   width: 80%;
+   height: 80%;
+   border-radius: 20px;
+}
+
+
+.footer{
+    background: rgb(58, 83, 42);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.footer a{
+    color: white;
+    cursor: pointer;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
