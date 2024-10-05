@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="truckers.css">
+    <script src="https://kit.fontawesome.com/2955f893d9.js" crossorigin="anonymous"></script>
+    <title>Tax Consultants of North America</title>
 </head>
 <body>
+    <div class="header">
+        <div class="container">
+            <h1>Tax Consultants of North America</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Services/services.html">Services</a></li>
+                <li><a href="/Truckers/truckers.html">Truckers</a></li>
+                <li><a href="/Resources/resources.html">Resources</a></li>
+                <li><a href="/Jobs/jobs.html">Jobs</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+   
+
+    <div class="trucks">
+    <div class="container">
+        <p>We specialize in YOU, the driver. Whether you are an owner-operator or a company driver, you work hard for your money and we want you to 
+            keep as much of it as possible. The Trucking/Transportation Industry is a unique one and most drivers are unaware of all the deductions 
+            possible for them to take. We have developed our Driver Supplement to help our drivers identify all deductions possible when it comes to 
+            their taxes. We understand the trucking industry and will work with you to stay current on your taxes or help you get caught up from past 
+            years of not filing. Contact us today to see how we can help you save money!
+            <br><br>
+            Need to file your 2290? We can help! We can handle this for you or can facilitate you electronically filing your form. Get your stamped 
+            Schedule 1 quicker – contact us to learn more.
+            <br><br>
+            We want to help you succeed! If you are interested in TCNA helping you track your expenses throughout the year, please contact us regarding
+             our bookkeeping and accounting services. We want to be THE tax firm for truck drivers which is why we welcome input from our clients 
+             always. Our supplement was developed with the help of our clients in the trucking industry and we are constantly looking for new ways we 
+             can help our clients more.</p>
+            </div>
+        <img src="/Images/trucks.jpg">
+    </div>
     
+
+    <div class="footer">
+        <p>Copyright © 2024 Tax Consultants of North America and/or its licensors – <a>Accessibility / Privacy Policy</a> – <a>Terms of Use</a> – <a>Manage Website</a><br>
+            Accountant Website Design by <a>GetNetSet.com</a></p>
+    </div>
+    <script>
+        const acc = document.querySelectorAll('.accordion-button');
+        acc.forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
+
+

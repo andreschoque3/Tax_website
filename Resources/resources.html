@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="resources.css">
+    <script src="https://kit.fontawesome.com/2955f893d9.js" crossorigin="anonymous"></script>
+    <title>Tax Consultants of North America</title>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="container">
+            <h1>Tax Consultants of North America</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Services/services.html">Services</a></li>
+                <li><a href="/Truckers/truckers.html">Truckers</a></li>
+                <li><a href="/Resources/resources.html">Resources</a></li>
+                <li><a href="/Jobs/jobs.html">Jobs</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+    <div class="resources">
+        <h2>Resources</h2>
+        <div class="accordion">
+            <button class="accordion-button">
+                <i class="fa-solid fa-calendar-check"></i>
+                 <span>Scheduling assistance</span>
+            </button>
+            <div class="accordion-content">
+                <p>Details about Resource 1.</p>
+            </div>
+            <button class="accordion-button">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Financial Calculators</span>
+            </button>
+            <div class="accordion-content">
+                <p>Details about Resource 2.</p>
+            </div>
+            <button class="accordion-button">
+                <i class="fa-solid fa-user"></i>
+                <span>User Portal</span>
+            </button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora maxime quia non, cum temporibus molestiae illum sunt earum 
+                    molestias corrupti harum repudiandae iusto repellendus voluptas eligendi similique perspiciatis nostrum.</p>
+            </div>
+            <button class="accordion-button">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Newletter</span>
+            </button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora maxime quia non, cum temporibus molestiae illum sunt earum 
+                    molestias corrupti harum repudiandae iusto repellendus voluptas eligendi similique perspiciatis nostrum.</p>
+            </div>
+            <button class="accordion-button">
+                <i class="fa-solid fa-business-time"></i>
+                <span>Training</span>
+            </button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam sint fugiat necessitatibus et dolor tempore quidem possimus voluptatibus molestias. Assumenda ipsum voluptatem 
+                reprehenderit beatae culpa quisquam asperiores voluptate alias suscipit!</p>
+            </div>
+            <button class="accordion-button">
+                <i class="fa-solid fa-paperclip"></i>
+                <span>Other Resources</span>
+            </button>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam sint fugiat necessitatibus et dolor tempore quidem possimus voluptatibus molestias. Assumenda ipsum voluptatem 
+                reprehenderit beatae culpa quisquam asperiores voluptate alias suscipit!</p>
+            </div>
+        </div>
+
+        <div class="help">
+            <div class="container">
+                <div class="wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+            <p> <p style="font-weight: bold;">If additional help needed:</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repudiandae libero ab 
+                perferendis provident debitis totam amet nobis, nesciunt reiciendis voluptatem! Excepturi quasi ad veritatis, 
+                repudiandae impedit sed laborum? Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos necessitatibus assumenda dolore amet. Deserunt eius inventore, quo praesentium mollitia alias ipsa nam voluptatibus consequatur, sed et tempore odio veniam temporibus.
+            </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2024 Tax Consultants of North America and/or its licensors – <a>Accessibility / Privacy Policy</a> – <a>Terms of Use</a> – <a>Manage Website</a><br>
+            Accountant Website Design by <a>GetNetSet.com</a></p>
+    </div>
+    <script>
+        const acc = document.querySelectorAll('.accordion-button');
+        acc.forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
+
+
