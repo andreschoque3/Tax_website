@@ -10,12 +10,21 @@ html {
 }
 
 body{
-     background: url(../Images/bg.jpg);
+     background: white;
 }
 
 .container{
     padding: 10px 10%;
     flex: 1;
+}
+
+.header-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/trucks.jpg);
+    position: relative;
 }
 
 /* ------------nav-bar-------------- */
@@ -24,7 +33,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    background: gray;
 }
 
 nav ul li{
@@ -55,48 +65,132 @@ nav ul LI a:hover::after {
     width: 100%;
 }
 
-.header{
+.nav-content{
     background: gray;
-    width: 90%;
+    width: 45%;
     border-radius: 20px;
-    margin: auto;
-    margin-top: 5px;
+    margin: 5px 300px;
+    /* margin-top: 5px; */
     text-align: center;
+}
+.logo{
+    font-size: 45px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: rgba(0, 128, 0, 0.807);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header-section h1{
+    font-size: 75px;
+    margin: 20%;
+    color: white;
 }
 
 .trucks{
     justify-content: center;
     text-align: center;
-    
+    border-radius: 30px;
 }
 
 .trucks p{
     font-weight: 500;
     font-size: 18px;
     background: transparent;
-    backdrop-filter: blur(30px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+    border-radius: 20px;
+    padding: 10px;
 }
 
-.trucks img {
-   height: 90%;
-   width: 90%; 
-   margin: auto;
-   border-radius: 20px;
+.truck-yard{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 20px auto;
 }
 
-.footer{
-    background: rgb(58, 83, 42);
-    position: relative;
-    text-align: center;
-    padding: 20px;
-    margin: auto;
+.truck-col-1{
+    flex-basis: 50%;
 }
 
-.footer a{
+.truck-col-2{
+    flex-basis: 50%;
+}
+
+.fa-solid{
+   font-size: 350px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgba(3, 90, 3, 0.911);
+    
+}
+
+.foot-container{
+    padding: 10px 8%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+    margin: 20px 10px;
+}
+
+.info-card{
+    min-width: 120px;
+}
+
+.info-card ul li{
+    list-style-type: none;
     color: white;
     cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+.info-card ul li a:hover{
+    text-decoration: underline;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.social-brands{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.social-brands a i{
+    transition: transform 0.5s;
+}
+
+.social-brands a i:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+.fa-brands{
+    color: black;
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.copyright p{
+    text-align: center;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+}
+
+.terms p{
+    margin: 10px 20px;
+    color: #EBEAB4;
+    cursor: pointer;
 }
