@@ -10,12 +10,21 @@ html {
 }
 
 body{
-     background: url(../Images/bg.jpg);
+     background: white;
 }
 
 .container{
     padding: 10px 10%;
 }
+.header-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/Images/resources-bg.jpg);
+    position: relative;
+}
+
 
 /* ------------nav-bar-------------- */
 
@@ -24,6 +33,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background: gray;
 }
 
 nav ul li{
@@ -54,17 +64,35 @@ nav ul LI a:hover::after {
     width: 100%;
 }
 
-.header{
+.nav-content{
     background: gray;
-    width: 90%;
+    width: 45%;
     border-radius: 20px;
-    margin: auto;
+    margin: 5px 300px;
+    text-align: center;
+}
+
+.logo{
+    font-size: 45px;
+    cursor: pointer;
+    margin-left: 20px;
     margin-top: 5px;
+    color: rgba(0, 128, 0, 0.807);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header-section h1{
+    font-size: 75px;
+    margin: 20%;
+    color: white;
     text-align: center;
 }
 
 
-.accordion {
+/* .accordion {
     padding: 50px;
 }
 
@@ -85,7 +113,7 @@ nav ul LI a:hover::after {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     margin-bottom: 5px;
-}
+} */
 
 .resources{
     padding-bottom: 51px;
@@ -95,7 +123,50 @@ nav ul LI a:hover::after {
     padding-top: 20px;
     text-align: center;
     font-size: 30px;
+    justify-content: center;
 }
+
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 23%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+}
+
+.collapsible {
+    display: none;
+}
+
+button {
+    border-radius: 50px;
+    border: 1px solid rgb(89, 89, 89);
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgba(5, 113, 5, 0.911);
+}
+
 
 .wrapper{
     /* display: none; */
@@ -111,19 +182,69 @@ nav ul LI a:hover::after {
     font-size: 18px;
 }
 
-.footer{
-    background: rgb(58, 83, 42);
-    position: relative;
-    text-align: center;
-    padding: 20px;
-    margin: auto;
+/* Footer */
+
+.footer {
+    background-color: rgba(3, 90, 3, 0.911);
+    
 }
 
-.footer a{
+.foot-container{
+    padding: 10px 8%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+    margin: 20px 10px;
+}
+
+.info-card{
+    min-width: 120px;
+}
+
+.info-card ul li{
+    list-style-type: none;
     color: white;
     cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+.info-card ul li a:hover{
+    text-decoration: underline;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.social-brands{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.social-brands a i{
+    transition: transform 0.5s;
+}
+
+.social-brands a i:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+.fa-brands{
+    color: black;
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.copyright p{
+    text-align: center;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+}
+
+.terms p{
+    margin: 10px 20px;
+    color: #EBEAB4;
+    cursor: pointer;
 }
