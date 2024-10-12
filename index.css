@@ -10,7 +10,8 @@ html {
 }
 
 body{
-     background: linear-gradient(#fbf7f5);
+     background: #f5f5d5;
+     color: black;
 }
 
 .container{
@@ -34,7 +35,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: gray;
+    background: rgb(100, 100, 100);
 }
 
 nav ul li{
@@ -54,7 +55,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: black;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -66,7 +67,7 @@ nav ul LI a:hover::after {
 }
 
 .nav-content{
-    background: gray;
+    background: rgb(100, 100, 100);
     width: 45%;
     border-radius: 20px;
     margin: 5px 300px;
@@ -100,12 +101,12 @@ nav ul LI a:hover::after {
 .option-selection {
     display: flex;
     justify-content:  center;
-    gap: 30px;
+    gap: 90px;
     align-items: center;
     height: auto;
     text-align: center;
     margin: 20px;
-    background: #b3b3b3;
+    background: transparent;
     border-radius: 30px;
     box-shadow: #333;
 }
@@ -116,16 +117,14 @@ nav ul LI a:hover::after {
     align-items: center;
     justify-content: center;
     width: 120px;
-    padding-top: 20px;
-    
-    
+    padding-top: 20px;  
 }
 
 .circle {
     width: 120px;
     height: 120px;
-    background-color: 	#ccaa66;
-    border-radius: 50%;
+    background-color:	#c7b793;
+    border-radius: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,14 +140,14 @@ nav ul LI a:hover::after {
 
 
 .circle:hover {
-    transform: scale(1.1); 
-    background-color: #2a9152;
+    transform: translateY(-5px);
+
 }
 
 .circle-container p {
     margin-top: 10px; 
-    font-size: 16px;
-    color: #333;
+    font-size: 20px;
+    color: black;
     min-height: 50px; 
     display: flex;
     align-items: center;
@@ -172,9 +171,57 @@ nav ul LI a:hover::after {
     text-align: center;
 }
 
+.intro{
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
 .intro p{
     font-size: 20px;
+    padding: 20px;
 }
+
+.intro img{
+    border-radius: 20px;
+}
+
+button {
+    border-radius: 50px;
+    border: 1px solid rgb(89, 89, 89);
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    /* margin: auto; */
+    cursor: pointer;
+    transition: 0.5s;
+    /* justify-content: center; */
+}
+
+button:hover {
+    background-color: rgba(5, 113, 5, 0.911);
+}
+
+/* ------ */
+
+
+.box-content p {
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.box-content img {
+    border-radius: 20px;
+    margin: 0 40px;
+    margin-bottom: 80px;
+}
+
+
+
 .slider{
     /* justify-content: center; */
     /* margin: auto; */
@@ -192,7 +239,7 @@ nav ul LI a:hover::after {
 /* Footer */
 
 .footer {
-    background-color: rgba(3, 90, 3, 0.911);
+    background-color: #8f9367;
     
 }
 

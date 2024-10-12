@@ -10,9 +10,9 @@ html {
 }
 
 body{
-     background: white;
-     overflow-x: hidden;
-     
+    background: #8f9367;
+    color: white;
+     overflow-x: hidden;  
 }
 
 .container{
