@@ -28,147 +28,40 @@
         <h1 class="title">Contact</h1>
     </div>
 
-    <div class="slider-wrapper">
-        <div class="slider">
-            <div class="list">
-                <div class="item">
-                  <div class="card">
-                    <h1>Accounting Software Solutions</h1>
-                    <!-- <p>Choosing the right accounting software is crucial 
-                        for current and future business needs, especially considering SaaS and cloud computing. We can help analyze your business and recommend 
-                        flexible software 
-                        solutions that grow with you.</p> -->
-                        <i class="fa-solid fa-check"></i>
-                        <a href="/Contact/contact.html">Learn More</a>
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                      <h1>Bookkeeping Services</h1>
-                      <!-- <p>If your business lacks accounting staff or needs better bookkeeping, we offer comprehensive services to ensure smooth financial operations.
-                         We also assist with planning as your business grows.</p> -->
-                         <i class="fa-solid fa-book"></i>
-                         <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>Business Consulting</h1>
-                      <!-- <p>As your business partner, we help with any business problem or 
-                        opportunity, offering consulting for expanding, selling, or 
-                        restructuring your business.</p> -->
-                        <i class="fa-solid fa-handshake-angle"></i>
-                        <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>Business Entity Selection</h1>
-                      <!-- <p>Choosing the right business entity is critical for financial and tax reasons.
-                         We explain the options and implications and can help you adjust as your 
-                         business evolves.</p> -->
-                         <i class="fa-solid fa-briefcase"></i>
-                         <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>Financial Analysis</h1>
-                      <!-- <p>Financial analysis improves management and decision-making by supporting or 
-                        rejecting potential actions with solid numbers. We provide prospective analysis 
-                        to support your business's growth.</p> -->
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>Financial Statements</h1>
-                      <!-- <p>Financial statements are essential for decision-making and for presenting your business 
-                        to stakeholders. We work closely with your team to develop accurate and timely
-                         statements.</p> -->
-                         <i class="fa-solid fa-envelope"></i>
-                         <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>IRS Audit Representation</h1>
-                      <!-- <p>If facing an IRS audit, our tax experts use years of experience to represent you, 
-                        ensuring proper handling of all tax matters and procedures.</p> -->
-                        <i class="fa-solid fa-calculator"></i> 
-                        <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>Notary Services</h1>
-                      <!-- <p>We offer notary public services to help with business matters like witnessing and 
-                        authenticating document signatures.</p> -->
-                        <i class="fa-solid fa-handshake"></i>
-                        <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>Payroll Services</h1>
-                      <!-- <p>Payroll management is complex due to changing laws and regulations. Our payroll professionals keep you 
-                        informed of important changes and ensure smooth payroll operations.</p> -->
-                        <i class="fa-solid fa-coins"></i>
-                        <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card">
-                      <h1>Tax Preparation and Planning</h1>
-                      <!-- <p>We help minimize tax liabilities through proactive tax preparation and planning, 
-                        ensuring you stay informed of opportunities and changes in tax legislation.</p> -->
-                        <i class="fa-solid fa-book-open-reader"></i>
-                        <a href="/Contact/contact.html">Learn More</a>
-                    </div>
-                  </div>
+    <div class="contact-container">
+        <div class="left-column">
+            <h2>Tax Consultants of North America</h2>
+            <p>8405 Richmond Hwy, Unit D Alexandria, VA 22309</p><br>
+            <p>Mailing Address: PO Box 90730 Alexandria, VA 22309</p><br>
+            <p><i class="fa-solid fa-phone"></i>703-519-9700</p><br>
+            <p><i class="fa-solid fa-fax"></i>703-519-9703</p><br>
+            <p><i class="fa-solid fa-envelope"></i>tcna@tcna3.com</p>
+          
+        </div>
+
+        <div class="right-column">
+            <div class="pill-nav">
+                <button class="active" onclick="showForm('appointmentForm')">Appointment</button>
+                <button onclick="showForm('messageForm')">Send a Message</button>
             </div>
-        </div>
 
-        <div class="buttons">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
-<!-- 
-        <ul class="dots">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul> -->
-    </div>
+            <div class="form-container">
+            <form id="appointmentForm" class="active">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="Phone" required>
+                <input type="date" placeholder="Date" required>
+                <input type="time" placeholder="Time" required>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
 
-    
-
-
-    <div class="service-box">
-        <div class="container">
-        <h1 style="text-align: center; margin: 35px; font-size: 55px;">Additional questions?</h1>
-        
-        <div class="call">
-                <img src="/Images/service-call.jpg">
-
-               <div class="q-container">
-                <div class="q-text">
-                    <p>This website exists to provide clients and potential clients with information concerning our firm and our unique, 
-                        low-pressure approach to personal and professional services. We have an excellent client-retention rate, 
-                        and we are extremely proud of the high-quality services that our firm provides.</p>
-                    </div>
-                    <div class="q-btn">
-                        <a href="/Contact/contact.html">Questions?</a>
-                    </div>
-               </div>
+            <form id="messageForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
             </div>
         </div>
     </div>
@@ -197,121 +90,34 @@
             </div>
             <div class="bottom">
                 <img src="/Images/foot-img1.png">
-                <img src="/Images/foot-img1.png">
-                <img src="/Images/foot-img1.png">
-                <img src="/Images/foot-img1.png">
-                <img src="/Images/foot-img1.png">
-                <img src="/Images/foot-img1.png">
-                
-            
-                <div class="terms">
-                    <p>Terms & Conditions</p>
-                    <p>Return Policy</p>
-                </div>
+                <img src="/Images/foot-img2.png">
+                <img src="/Images/foot-img3.png">
+                <img src="/Images/foot-img4.png">
+                <img id="bbb" src="/Images/foot-img5.png">
+                <img id="secured" src="/Images/foot-img6.png">
             </div>
         </div>
     </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-        
-            function openTab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
+    <script>
+        function showForm(formId) {
+            // Hide both forms
+            document.getElementById('appointmentForm').classList.remove('active');
+            document.getElementById('messageForm').classList.remove('active');
+
+            // Remove active class from both buttons
+            document.querySelectorAll('.pill-nav button').forEach(button => button.classList.remove('active'));
+
+            // Show the selected form
+            document.getElementById(formId).classList.add('active');
+
+            // Add active class to the corresponding button
+            if (formId === 'appointmentForm') {
+                document.querySelector('.pill-nav button:nth-child(1)').classList.add('active');
+            } else {
+                document.querySelector('.pill-nav button:nth-child(2)').classList.add('active');
             }
-
-            function validateForm() {
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var question = document.getElementById("question").value;
-                var errorMessage = document.getElementById("error-message");
-
-                if (name === "" || email === "" || question === "") {
-                    errorMessage.textContent = "All fields are required!";
-                return false;
-                } else {
-                    errorMessage.textContent = "";  
-                    alert("Question submitted successfully!");
-                    return true;
-                }}
-
-
-                // --------slider JS-------
-// Get all necessary elements
-let list = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let dots = document.querySelectorAll('.slider .dots li');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
-
-let active = 0; // This tracks the current active card
-const totalItems = items.length; // Total number of items
-const cardWidth = items[0].clientWidth; // Get the width of a single card
-
-// Ensure overflow is hidden and width is constrained to 100vw
-document.body.style.overflowX = "hidden";
-document.body.style.width = "100vw";
-
-// Reload the slider to reflect the current active index
-function reloadSlider() {
-    if (active < 0) {
-        active = totalItems - 1; // Loop back to the last item
-    }
-    if (active >= totalItems) {
-        active = 0; // Loop back to the first item
-    }
-
-    // Move the list by the width of the cards
-    list.style.transform = `translateX(${-active * cardWidth}px)`;
-
-    // Update active dot
-    updateDots();
-}
-
-// Update the dots for active slide
-function updateDots() {
-    dots.forEach((dot, index) => {
-        if (index === active) {
-            dot.classList.add('active'); // Add active class to the current dot
-        } else {
-            dot.classList.remove('active'); // Remove active class from other dots
         }
-    });
-}
-
-// Next button functionality
-next.onclick = function() {
-    active += 1;
-    reloadSlider();
-}
-
-// Prev button functionality
-prev.onclick = function() {
-    active -= 1;
-    reloadSlider();
-}
-
-// Dot functionality: add click event listeners to each dot
-dots.forEach((dot, index) => {
-    dot.onclick = function() {
-        active = index; // Set active to the index of the clicked dot
-        reloadSlider();  // Reload the slider to show the correct card
-    }
-});
-
-// Initialize the slider on page load
-window.onload = function() {
-    reloadSlider();
-}
-
-
-        </script>
+    </script>
 </body>
 </html>
 

@@ -204,7 +204,7 @@ overflow: hidden;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 65%;
+    top: 35%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
