@@ -1,3 +1,5 @@
+/* ------------Global CSS-------------- */
+
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -10,22 +12,13 @@ html {
 }
 
 body{
-    background: #8f9367;
+    background: #f5f5d5;
     color: white;
 }
 
 .container{
     padding: 10px 10%;
 }
-.header-section {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/Images/resources-bg.jpg);
-    position: relative;
-}
-
 
 /* ------------nav-bar-------------- */
 
@@ -34,7 +27,6 @@ nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: gray;
 }
 
 nav ul li{
@@ -50,202 +42,338 @@ nav ul li a {
     position: relative;
 }
 
+.ul-head {
+    padding: 10px 90px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: black;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
 
-nav ul LI a:hover::after {
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.nav-content{
-    background: gray;
-    width: 45%;
-    border-radius: 20px;
-    margin: 5px 300px;
-    text-align: center;
+/*------------header-section--------------*/
+
+.header-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/Images/resources-bg.jpg);
+    position: relative;
 }
 
-.logo{
-    font-size: 45px;
-    cursor: pointer;
-    margin-left: 20px;
-    margin-top: 5px;
-    color: rgba(0, 128, 0, 0.807);
-}
-
-.header{
-    display: flex;
-    justify-content: center;
-}
-.header-section h1{
+.header-section h1 {
     font-size: 75px;
-    margin: 20%;
-    color: white;
-    text-align: center;
+    margin: 15%;
 }
 
+/*------------client-portal-section--------------*/
 
-/* .accordion {
-    padding: 50px;
-}
-
-.accordion-button {
-    background-color: #2977bc;
-    color: #fff;
-    padding: 15px;
-    border: 1px solid black;
-    width: 100%;
-    text-align: left;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.accordion-content {
-    display: none;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
-} */
-
-.resources{
-    padding-bottom: 51px;
-}
-
-.resources h2{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 30px;
-    justify-content: center;
-}
-
-
-.card-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.card {
-    width: 23%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    text-align: center;
-}
-
-.collapsible {
-    display: none;
-}
-
-button {
-    border-radius: 50px;
-    border: 1px solid rgb(89, 89, 89);
+.client {
+    background-color: white;
     color: black;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    gap: 45px;
+    margin: 40px 0;
+}
+
+.client-text h1 {
+    font-size: 55px;
+    margin: 45px 0;
+}
+
+.client-btns {
+    display: flex;
+    gap: 30px;
+}
+
+.client-btns button {
+    padding: 20px 45px;
+    border-radius: 10px;
+    background-color: #8f9367;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: transform 0.5s;
     cursor: pointer;
-    transition: 0.5s;
+}
+
+.client-btns button:hover {
+    transform: translateY(-10px);
+}
+
+.client img {
+    border-radius: 10px;
+    align-items: left;
+}
+
+/*------------calculators-section--------------*/
+
+.calculators {
+    margin: 60px 0;
+}
+
+.calculators h1 {
+    text-align: center;
+    color: black;
+    font-size: 65px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 50px 0;
     justify-content: center;
 }
 
-button:hover {
-    background-color: rgba(5, 113, 5, 0.911);
-}
-
-
-.wrapper{
-    /* display: none; */
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
+.calcs {
+    padding: 50px 20px;
+    background-color: #C7B793;
     border-radius: 20px;
-}
-
-.fa-circle-info {
-    color: blue;
-    font-size: 18px;
-}
-
-/* Footer */
-
-.footer {
-    background-color: rgba(3, 90, 3, 0.911);
-    
-}
-
-.foot-container{
-    padding: 10px 8%;
-}
-
-.top{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid 1px;
-    margin: 20px 10px;
-}
-
-.info-card{
-    min-width: 120px;
-}
-
-.info-card ul li{
-    list-style-type: none;
-    color: white;
+    width: 200px;
+    transition: 0.5s ease;
     cursor: pointer;
-    margin: 5px;
-    font-size: 14px;
-}
-.info-card ul li a:hover{
-    text-decoration: underline;
 }
 
-.social-brands{
+.icon-align {
+    text-align: center;
+    font-size: 60px;
+}
+
+.calcs h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.calcs:hover {
+    transform: scale(1.1);
+}
+
+/*------------payment-section--------------*/
+
+.payment {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    gap: 45px;
+    margin: 40px 0;
+}
+
+.payment-text h1 {
+    font-size: 55px;
+    margin: 90px 50px;
+    text-align: center;
+}
+
+.payment-btns {
+    text-align: center;
+}
+
+.payment-btns button {
+    padding: 20px 45px;
+    border-radius: 10px;
+    background-color: #8f9367;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.payment-btns button:hover {
+    transform: translateY(-10px);
+}
+
+.payment img {
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+/*------------tax-resources-section--------------*/
+
+.tax-res {
+    margin: 60px 0;
+}
+
+.tax-res h1 {
+    color: black;
+    font-size: 65px;
+    text-align: center;
+}
+
+.tax-btn {
     text-align: center;
     margin: 30px 0;
 }
 
-.social-brands a i{
+.tax-btn button {
+    padding: 20px 45px;
+    border-radius: 10px;
+    background-color: #8f9367;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.tax-res button:hover {
+    transform: translateY(-10px);
+}
+
+/*------------newsletter-section--------------*/
+
+.newsletter {
+    margin: 40px 0;
+}
+
+.news-pill {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.news-pill h2 {
+    margin-right: auto;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.news-pill button {
+    margin-left: auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: #8f9367;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/*------------Footer--------------*/
+
+.footer {
+    background-color: #8f9367;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the items */
+    margin: 20px 10px;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.top-container ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.top-container ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    list-style: none;
+}
+
+.info-card ul {
+    display: flex;
+    padding: 0;
+}
+
+.info-card ul li {
+    list-style-type: none;
+    margin: 0 15px;
+    color: white;
+    font-size: 14px;
+}
+
+.info-card ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info-card ul li a:hover {
+    text-decoration: underline;
+}
+
+.bottom img{
+    min-height: 60px;
+}
+
+#bbb img{
+    width: 316px;
+}
+
+.social-brands {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-brands a i {
     transition: transform 0.5s;
 }
 
-.social-brands a i:hover{
+.social-brands a i:hover {
     color: white;
     transform: translateY(-5px);
 }
-.fa-brands{
-    color: black;
+
+.fa-brands {
+    color: white;
     font-size: 25px;
     margin: 0 20px;
 }
 
-.copyright p{
+.bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bottom img {
+    max-width: 100px; /* Adjust based on your image size */
+    margin-bottom: 10px;
+}
+
+.bottom p {
+    color: white;
+    font-size: 14px;
+}
+
+.copyright p {
     text-align: center;
 }
 
 .terms {
     display: flex;
     justify-content: center;
-}
-
-.terms p{
-    margin: 10px 20px;
-    color: #EBEAB4;
-    cursor: pointer;
 }
