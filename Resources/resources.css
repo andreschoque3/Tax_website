@@ -45,7 +45,7 @@ nav ul li a {
 .ul-head {
     padding: 10px 90px;
     border-radius: 20px;
-    background-color: #0C0B0B;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul li a::after {
