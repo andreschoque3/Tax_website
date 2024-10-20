@@ -137,24 +137,23 @@ nav ul li a:hover::after {
 .top {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Vertically center the items */
+    align-items: center;
     margin: 20px 10px;
 }
 
-.top-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.top p {
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
 }
 
-.top-container ul li{
+.top  ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-.top-container ul li a {
+.top ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -162,40 +161,16 @@ nav ul li a:hover::after {
     list-style: none;
 }
 
-.info-card ul {
-    display: flex;
-    padding: 0;
-}
-
-.info-card ul li {
-    list-style-type: none;
-    margin: 0 15px;
-    color: white;
-    font-size: 14px;
-}
-
-.info-card ul li a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.info-card ul li a:hover {
-    text-decoration: underline;
+.bottom {
+    text-align: center;
 }
 
 .bottom img{
-    min-height: 60px;
-}
-
-#bbb img{
-    width: 316px;
+    width: 50%;
 }
 
 .social-brands {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .social-brands a i {
@@ -211,28 +186,4 @@ nav ul li a:hover::after {
     color: white;
     font-size: 25px;
     margin: 0 20px;
-}
-
-.bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.bottom img {
-    max-width: 100px; /* Adjust based on your image size */
-    margin-bottom: 10px;
-}
-
-.bottom p {
-    color: white;
-    font-size: 14px;
-}
-
-.copyright p {
-    text-align: center;
-}
-
-.terms {
-    display: flex;
-    justify-content: center;
 }
