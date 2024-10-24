@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <script src="https://kit.fontawesome.com/2955f893d9.js" crossorigin="anonymous"></script>
-    <title>Tax Consultants of North America</title>
+    <title>Contact - Tax Consultants of North America</title>
 </head>
 <body>
     <div class="header-section">
-        <div class="header">
-            <!-- <div class="logo"><i class="fa-solid fa-comment-dollar"></i></div> -->
-            <div class="nav-content">
+        <div class="container">
             <nav>
-                <ul>
+                <ul class="ul-head">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/Services/services.html">Services</a></li>
                     <li><a href="/Truckers/truckers.html">Truckers</a></li>
                     <li><a href="/Resources/resources.html">Resources</a></li>
-                    <li><a href="/Jobs/jobs.html">Jobs</a></li>
+                    <li><a href="/Jobs/jobs.html">Careers</a></li>
                     <li><a href="/Contact/contact.html">Contact</a></li>
                 </ul>
             </nav>
-            
+
+            <div class="head-txt">
+                <h1>Contact</h1>
             </div>
         </div>
-        <h1 class="title">Contact</h1>
     </div>
+
+
 
     <div class="contact-container">
         <div class="left-column">
@@ -36,20 +37,22 @@
             <p><i class="fa-solid fa-phone"></i>703-519-9700</p><br>
             <p><i class="fa-solid fa-fax"></i>703-519-9703</p><br>
             <p><i class="fa-solid fa-envelope"></i>tcna@tcna3.com</p>
-          
         </div>
 
         <div class="right-column">
-            <div class="pill-nav">
-                <button class="active" onclick="showForm('appointmentForm')">Appointment</button>
-                <button onclick="showForm('messageForm')">Send a Message</button>
+            <div class="pill-align">
+                <div class="pill-nav">
+                    <button class="active" onclick="showForm('appointmentForm')">Appointment</button>
+                    <button onclick="showForm('messageForm')">Message</button>
+                </div>
             </div>
+            
 
             <div class="form-container">
             <form id="appointmentForm" class="active">
                 <input type="text" placeholder="Name" required>
                 <input type="email" placeholder="Email" required>
-                <input type="email" placeholder="Phone" required>
+                <input type="tel" name="Phone" pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}" minlength="10" maxlength="12" placeholder="Phone" required>
                 <input type="date" placeholder="Date" required>
                 <input type="time" placeholder="Time" required>
                 <textarea placeholder="Message"></textarea>
@@ -57,9 +60,9 @@
             </form>
 
             <form id="messageForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message"></textarea>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message"></textarea>
                 <button type="submit">Send</button>
             </form>
             </div>
@@ -71,46 +74,35 @@
     <div class="footer">
         <div class="container">
             <div class="top">
-                <div class="top-container">
-                    <ul>
-                        <li>
-                            <li><a href="#header">© Tax Consultants of America</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Accessibility</a></li>
-                            <li><a href="#">Privacy Statement</a></li>
-                        </li>
-                    </ul>
-                    <div class="social-brands">
-                        <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                <p>© 2024 Tax Consultants of <br> North America</p>
+                <ul>
+                    <li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Privacy Statement</a></li>
+                    </li>
+                </ul>
+                <div class="social-brands">
+                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
             <div class="bottom">
-                <img src="/Images/foot-img1.png">
-                <img src="/Images/foot-img2.png">
-                <img src="/Images/foot-img3.png">
-                <img src="/Images/foot-img4.png">
-                <img id="bbb" src="/Images/foot-img5.png">
-                <img id="secured" src="/Images/foot-img6.png">
+                <img src="/Images/footer-img.png">
             </div>
         </div>
     </div>
     <script>
         function showForm(formId) {
-            // Hide both forms
             document.getElementById('appointmentForm').classList.remove('active');
             document.getElementById('messageForm').classList.remove('active');
 
-            // Remove active class from both buttons
             document.querySelectorAll('.pill-nav button').forEach(button => button.classList.remove('active'));
 
-            // Show the selected form
             document.getElementById(formId).classList.add('active');
 
-            // Add active class to the corresponding button
             if (formId === 'appointmentForm') {
                 document.querySelector('.pill-nav button:nth-child(1)').classList.add('active');
             } else {
