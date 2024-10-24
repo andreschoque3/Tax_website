@@ -1,3 +1,5 @@
+/* ------------Global CSS-------------- */
+
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -11,22 +13,11 @@ html {
 
 body{
     background: #f5f5d5;
-     color: black;
-     overflow-x: hidden;  
+    color: white;
 }
 
 .container{
     padding: 10px 10%;
-}
-
-.header-section {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/Images/service-bg.jpg);
-    position: relative;
-    margin: auto;
 }
 
 /* ------------nav-bar-------------- */
@@ -51,6 +42,12 @@ nav ul li a {
     position: relative;
 }
 
+.ul-head {
+    padding: 10px 90px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 nav ul li a::after {
     content: '';
     width: 0;
@@ -62,50 +59,35 @@ nav ul li a::after {
     transition: 0.5s;
 }
 
-nav ul LI a:hover::after {
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.nav-content{
-    background: #0C0B0B;
-    width: 50%;
-    border-radius: 20px;
-    margin: 5px 300px;
-    text-align: center;
-    justify-content: right;
-    padding: 10px 0;
-}
+/*------------header-section--------------*/
 
-.logo{
-    font-size: 45px;
-    cursor: pointer;
-    margin-left: 20px;
-    margin-top: 5px;
-    color: rgba(0, 128, 0, 0.807);
-}
-
-.header{
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+.header-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/Images/service-bg.jpg);
+    position: relative;
 }
 
 .header-section h1{
     font-size: 75px;
     margin: 20%;
-    color: white;
     text-align: center;
 }
 
-.sub-header{
-    margin: 20px;
-    justify-content: center;
-    text-align: center;
+/* ------------middle-section------------- */
+
+.middle-sect{
+    color: black;
+    margin: 50px 0;
 }
 
-/* ------------main body------------- */
-
+/* --------------Carousel section-------------- */
 
 .slider-wrapper{
 position: relative;
@@ -114,7 +96,7 @@ overflow: hidden;
 }
 
 .slider{
-    width: 100%;
+    width: 90%;
     height: 700px;
     margin: auto;
     position: relative;
@@ -123,6 +105,7 @@ overflow: hidden;
 .slider .list {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    flex-wrap: wrap;
 }
 
 .slider .item {
@@ -135,7 +118,6 @@ overflow: hidden;
     padding-bottom: 5px;
     text-decoration: none;
 }
-
 
 .list{
     position: absolute;
@@ -178,7 +160,6 @@ overflow: hidden;
     margin: 70px 0;
 }
 
-
 .card h1 {
     margin: 0; 
     padding-bottom: 10px; 
@@ -204,7 +185,7 @@ overflow: hidden;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
@@ -230,20 +211,20 @@ overflow: hidden;
 }
 
 /* -------text-section-------- */
+
 .talk{
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     padding-bottom: 20px;
+    line-height: 1.5;
 }
 
 /* ---------questions-------- */
 
 .service-box h1{
     text-align: center; 
-    margin: 35px; 
-    font-size: 55px;
+    margin: 35px;
 }
-
 
 .call{
     background: white;
@@ -263,11 +244,9 @@ overflow: hidden;
     border-radius: 20px;
 }
 
-
 .q-btn{
     cursor: pointer;
     margin: 20px;
-    text-decoration: none;
 }
 
 .q-btn a{
@@ -282,92 +261,33 @@ overflow: hidden;
     font-size: 24px;
 }
 
-.wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-}
 
-/* .form-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 75%;
-}
-
-h2 {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-container button{
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-#error-message {
-    color: red;
-    text-align: center;
-    margin-top: 10px;
-} */
-
-/* Footer */
+/* --------Footer section---------- */
 
 .footer {
     background-color: #8f9367;
 }
 
-.foot-container {
-    padding: 10px 8%;
-}
-
 .top {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Vertically center the items */
+    align-items: center;
     margin: 20px 10px;
 }
 
-.top-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.top p {
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
 }
 
-.top-container ul li{
+.top  ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-.top-container ul li a {
+.top ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -375,41 +295,16 @@ button:hover {
     list-style: none;
 }
 
-.info-card ul {
-    display: flex;
-    padding: 0;
-}
-
-.info-card ul li {
-    list-style-type: none;
-    margin: 0 15px;
-    color: white;
-    font-size: 14px;
-}
-
-.info-card ul li a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.info-card ul li a:hover {
-    text-decoration: underline;
+.bottom {
+    text-align: center;
 }
 
 .bottom img{
-    min-height: 60px;
+    width: 50%;
 }
-
-#bbb img{
-    width: 316px;
-}
-
 
 .social-brands {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .social-brands a i {
@@ -422,37 +317,7 @@ button:hover {
 }
 
 .fa-brands {
-    color: black;
+    color: white;
     font-size: 25px;
     margin: 0 20px;
 }
-
-.bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.bottom img {
-    max-width: 100px; /* Adjust based on your image size */
-    margin-bottom: 10px;
-}
-
-.bottom p {
-    color: white;
-    font-size: 14px;
-}
-
-.copyright p {
-    text-align: center;
-}
-
-.terms {
-    display: flex;
-    justify-content: center;
-}
-
-/* .terms p {
-    margin: 10px 20px;
-    color: #EBEAB4;
-    cursor: pointer;
-} */
