@@ -120,6 +120,7 @@ nav ul li a:hover::after {
     font-size: 20px;
     text-align: center;
     margin-top: 15px;
+    color: white;
 }
 
 .sub-heading {
