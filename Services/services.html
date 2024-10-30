@@ -28,85 +28,101 @@
   </div>
 
 <div class="middle-sect">
-  <div class="slider-wrapper">
-    <div class="slider">
-        <div class="list">
-            <div class="item">
-              <div class="card">
-                <h1>Accounting Software Solutions</h1>
-                    <i class="fa-solid fa-check"></i>
+
+    <div class="slider-wrapper">
+        <div class="left-arrow-container">
+        <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
+         </div>
+  
+    <div class="slider-container">
+      <div class="slider">
+          <div class="card">
+              <div class="card-content">
+                  <h2>Accounting Software Solutions</h2>
+                  <i class="fa-solid fa-check"></i>
+                  <div class="a-align">
                     <a href="/Contact/contact.html">Learn More</a>
+                  </div>
               </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                  <h1>Bookkeeping Services</h1>
-                     <i class="fa-solid fa-book"></i>
-                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <h1>Business Consulting</h1>
-                    <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>Bookkeeping Services</h2>
+                   <i class="fa-solid fa-book"></i>
+                   <div class="a-align">
                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
+                  </div>
               </div>
-              <div class="item">
-                <div class="card">
-                  <h1>Business Entity Selection</h1>
-                     <i class="fa-solid fa-briefcase"></i>
-                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <h1>Financial Analysis</h1>
-                    <i class="fa-solid fa-chart-simple"></i>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>Business Consulting</h2>
+                  <i class="fa-solid fa-handshake-angle"></i>
+                  <div class="a-align">
                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
+                  </div>
               </div>
-              <div class="item">
-                <div class="card">
-                  <h1>Financial Statements</h1>
-                     <i class="fa-solid fa-envelope"></i>
-                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <h1>IRS Audit Representation</h1>
-                    <i class="fa-solid fa-calculator"></i> 
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>Business Entity Selection</h2>
+                  <i class="fa-solid fa-briefcase"></i>
+                  <div class="a-align">
                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
+                  </div>
               </div>
-              <div class="item">
-                <div class="card">
-                  <h1>Notary Services</h1>
-                    <i class="fa-solid fa-handshake"></i>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>Financial Analysis</h2>
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <div class="a-align">
                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
+                  </div>
               </div>
-              <div class="item">
-                <div class="card">
-                  <h1>Payroll Services</h1>
-                    <i class="fa-solid fa-coins"></i>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>IRS Audit Representation</h2>
+                  <i class="fa-solid fa-calculator"></i> 
+                  <div class="a-align">
                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
+                  </div>
               </div>
-              <div class="item">
-                <div class="card">
-                  <h1>Tax Preparation and Planning</h1>
-                    <i class="fa-solid fa-book-open-reader"></i>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>Notary Services</h2>
+                  <i class="spacer fa-solid fa-handshake"></i>
+                  <div class="a-align">
                     <a href="/Contact/contact.html">Learn More</a>
-                </div>
+                  </div>
               </div>
-        </div>
-        <div class="buttons">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
-    </div>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>Payroll Services</h2>
+                  <i class="spacer fa-solid fa-coins"></i>
+                  <div class="a-align">
+                    <a href="/Contact/contact.html">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <h2>Tax Preparation & Planning</h2>
+                  <i class="fa-solid fa-book-open-reader"></i>
+                  <div class="a-align">
+                    <a href="/Contact/contact.html">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="right-arrow-container">
+      <button class="arrow right-arrow" onclick="moveRight()">&#10095;</button>
+  </div>
 </div>
 
   <div class="talk">
@@ -159,43 +175,34 @@
         </div>
     </div>
 <script>     
-    let list = document.querySelector('.slider .list');
-    let items = document.querySelectorAll('.slider .list .item');
-    let prev = document.getElementById('prev');
-    let next = document.getElementById('next');
+let currentIndex = 0;
+const totalCards = 5;
+const visibleCards = 3;
 
-    let active = 0; 
-    const totalItems = items.length; 
-    const cardWidth = items[0].clientWidth; 
-
-
-    document.body.style.overflowX = "hidden";
-
-
-    function reloadSlider() {
-        if (active < 0) {
-            active = totalItems - 1;
-        }
-        if (active >= totalItems) {
-            active = 0;
-        }
-
-    list.style.transform = `translateX(${-active * cardWidth}px)`;
+function moveLeft() {
+    if (currentIndex === 0) {
+        currentIndex = totalCards - visibleCards;
+    } else {
+        currentIndex--;
     }
+    updateSliderPosition();
+}
 
-    next.onclick = function() {
-        active += 1;
-        reloadSlider();
+function moveRight() {
+    if (currentIndex === totalCards - visibleCards) {
+        currentIndex = 0;
+    } else {
+        currentIndex++;
     }
+    updateSliderPosition();
+}
 
-    prev.onclick = function() {
-        active -= 1;
-        reloadSlider();
-    }
+function updateSliderPosition() {
+    const slider = document.querySelector('.slider');
+    const cardWidth = slider.offsetWidth / visibleCards;
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
 
-    window.onload = function() {
-        reloadSlider();
-    }
 </script>
 </body>
 </html>
