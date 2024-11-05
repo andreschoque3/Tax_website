@@ -70,7 +70,7 @@ nav ul li a:hover::after {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/Images/resources-bg.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/resources-bg.jpg);
     position: relative;
 }
 
