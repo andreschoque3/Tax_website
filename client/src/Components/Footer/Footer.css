@@ -1,0 +1,57 @@
+.footer {
+    background-color: #8f9367;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.top p {
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+}
+
+.top  ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.top ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    list-style: none;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.bottom img{
+    width: 50%;
+}
+
+.social-brands {
+    display: flex;
+}
+
+.social-brands a i {
+    transition: transform 0.5s;
+}
+
+.social-brands a i:hover {
+    color: white;
+    transform: translateY(-5px);
+}
+
+.fa-brands {
+    color: white;
+    font-size: 25px;
+    margin: 0 20px;
+}
