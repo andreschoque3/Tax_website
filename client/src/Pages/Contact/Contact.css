@@ -1,25 +1,4 @@
-* {
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #f5f5d5;
-    color: white;
-}
-
-.container {
-    padding: 10px 10%;
-}
-
 /* ------------Header Section------------- */
-
 
 .header-section-contact {
     width: 100%;
