@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Footer.css';
 import footer_image from './Images/footer-img.png';
 
