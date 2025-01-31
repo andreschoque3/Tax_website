@@ -11,26 +11,18 @@ const Navbar = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-            <li>
-              <a href="https://jackm88.github.io/Tax_website_Jack/Services/services.html">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="https://jackm88.github.io/Tax_website_Jack/Truckers/truckers.html">
-                Truckers
-              </a>
-            </li>
-            <li>
-              <a href="https://jackm88.github.io/Tax_website_Jack/Resources/resources.html">
-                Resources
-              </a>
-            </li>
-            <li>
-              <a href="https://jackm88.github.io/Tax_website_Jack/Jobs/jobs.html">
-                Careers
-              </a>
-            </li>
+          <li>
+            <Link to="/Services">Services</Link>
+          </li>
+          <li>
+            <Link to="/Truckers">Truckers</Link>
+          </li>
+          <li>
+            <Link to="/Resources">Resources</Link>
+          </li>
+          <li>
+            <Link to="/Careers">Careers</Link>
+          </li>
             <li>
             <Link to="/Contact">Contact</Link>
           </li>
