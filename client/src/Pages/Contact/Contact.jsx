@@ -32,10 +32,15 @@ const Contact = () => {
 
     if (res.success) {
       console.log("Success", res);
+      toast.success('Message success')
+    }
+    else {
+      console.log("Error", res)
+      toast.error('Error')
     }
   };
 
-  const notify = () => toast('Form Submitted!');
+  // const notify = () => toast('Form Submitted!');
 
   return (
     <div>
@@ -100,7 +105,7 @@ const Contact = () => {
     <input type="date" name="date" placeholder="Date" required />
     <input type="time" name="time" placeholder="Time" required />
     <textarea name="message" placeholder="Message"></textarea>
-    <button onClick={notify} type="submit">Send</button>
+    <button type="submit">Send</button>
     <ToastContainer/>
   </form>
 
@@ -109,7 +114,7 @@ const Contact = () => {
     <input type="text" name="name" placeholder="Name" required />
     <input type="email" name="email" placeholder="Email" required />
     <textarea name="message" placeholder="Message"></textarea>
-    <button onClick={notify} type="submit">Send</button>
+    <button type="submit">Send</button>
     <ToastContainer/>
   </form>
 </div>
